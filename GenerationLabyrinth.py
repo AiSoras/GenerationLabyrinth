@@ -55,8 +55,8 @@ endcell=random.randrange(1,h,2)
 maze[endcell][-1]=0
 for i in range(h):
     if(i%2==0):
-        t=['-' if x  else ' ' for x in maze[i]]
+        t=['■' if x  else ' ' for x in maze[i]]
         print(''.join(x for x in t))
     else:
-        t=['| ' if x else '  ' for x in maze[i][::2]]
+        t=['■ ' if x else '  ' for x in maze[i][::2]]
         print(''.join(x for x in t))
